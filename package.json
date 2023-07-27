@@ -1,0 +1,15 @@
+{
+  "name": "coder-segunda-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://marcosr2023.github.io/pagina-coder2/index.html"
+  },
+  "author": "Marcos Rosalin",
+  "license": "ISC"
+}

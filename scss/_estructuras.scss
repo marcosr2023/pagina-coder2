@@ -1,6 +1,5 @@
 .buscar-container {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     align-items: center;
     margin: 50px;
 }
@@ -16,7 +15,7 @@
 .buscar-input {
     width: 100%;
     padding: 10px;
-    border: solid 5px #001a2d;
+    border: solid 5px $color-primario;
     border-radius: 15px;
     margin-bottom: 10px;
 }
@@ -39,12 +38,11 @@
 
 .grid-item {
     background-color: rgba(208, 197, 197, 0.508);
-    border: solid 2px #001a2d;
+    border: solid 2px $color-primario ;
     padding: 1em;  
     margin: 20px;
-    width: auto;
-    height: auto;
-    margin-top: 40px;
+    @include sizes(auto, auto);
+    margin-top: 40px; 
 
 }
 
@@ -63,56 +61,44 @@
 
 .nos { 
     text-align: center;
-  
+    font-family: $fuentes-principal ;
 }
 
 .footer-redes {
-    display: flex;
+    @include flex-center;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 10px;
     margin-top: 50px;
-    width: auto;
-    height: auto
+    @include sizes(auto, auto);
 }
 
 body {
     background-color: rgb(200, 200, 203);
 }
 @media screen and (max-width: 768px) {
-    article {
+    body {
         background-color: rgb(119, 99, 99);
 }
+
 }
 @media screen and (max-width: 425px) {
-    article {
+    body {
         background-color: rgb(84, 65, 65);
     }
 }
 
 img {
-    width:80px;
-    height:80px;
+    @include sizes(80px, 80px);
 }
 
-.h2 { 
-    text-align: center;
-    text-decoration: underline;
-    text-decoration: black;
-}
   
-p {
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(12, 12, 12);
-}
+
 
 .registro{
-    display: flex;
+    @include flex-center;
     padding: 50px;
     flex-direction: column;
     width: auto;
-    justify-content: center;
     align-items: center;
 }
 
@@ -142,12 +128,10 @@ div:hover {
 
 .regresa {
     margin: 15px;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 50px;
-
     height: 25vh;
 }
 
@@ -157,9 +141,8 @@ div:hover {
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    border: 10px solid #001a2d ;
-    width: 150px;
-    height: 150px;
+    border: 10px solid $color-primario ;
+    @include sizes(150px ,150px);
     border-radius: 100%;
     border-right-color: transparent;
     animation: rot 1s linear infinite
