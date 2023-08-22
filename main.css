@@ -15,7 +15,7 @@
 }
 .buscar-input {
     width: 100%;
-    padding: 10px;
+    padding: 10%; 
     border: solid 5px #001a2d;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -23,8 +23,8 @@
 
 .buscar-boton {
     width: 100%;
-    padding: 15px;
-    background-color: #177fee;
+    padding: 10px;
+    background-color: #dbdfe3;
     color: #fff;
     border: none;
     border-radius: 15px;
